@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD3-FIREBASE</title>
+    <link rel="'stylesheet" href="styles.css"> 
+</head>
+<body>
+    
+</body>
+
+    <!-- SDK DO FIREBASE -->
+    <script src=
+        "https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js">
+    </script>
+
+    <!-- SDK DO FIRESTORE -->
+    <script src=
+        "https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js">
+    </script> 
+
+    <!-- CONEXÃO COM O FIREBASE -->
+
+    <script>
+        const firebaseConfig = {
+  apiKey: "AIzaSyCKA4nwYO9lqIKv2dSoQ6rxFKbIZGgUbP8",
+  authDomain: "bd3-app-libri-geovanna.firebaseapp.com",
+  projectId: "bd3-app-libri-geovanna",
+  storageBucket: "bd3-app-libri-geovanna.appspot.com",
+  messagingSenderId: "736219071243",
+  appId: "1:736219071243:web:6108a3d8b327034122580e",
+  measurementId: "G-5LC5HMMS05"
+}
+
+         firebase.inicializeApp(firebaseConfig)
+
+         const db = firebase.firestore()
+         console.log(db)
+    </script>
+
+    <!-- importação do app.js -->
+     <script src="app.js"></script>
+</html>
