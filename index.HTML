@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD3-FIREBASE</title>
-    <link rel="'stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    
+    <h1> APP LIBRI - FIRESTORE</h1>
+
+    <div class="content">
+        <form id="add-book-form">
+            <input type = "text" name="autor" placeholder="Nome do Autor">
+            <input type = "text" name="autor" placeholder="Titulo do livro">
+            <button>Cadastrar</button>
+        </form>
+        <ul id="book-list"></ul>
+        
+    </div>
 </body>
 
     <!-- SDK DO FIREBASE -->
@@ -33,7 +43,7 @@
   measurementId: "G-5LC5HMMS05"
 }
 
-         firebase.inicializeApp(firebaseConfig)
+         firebase.initializeApp(firebaseConfig);
 
          const db = firebase.firestore()
          console.log(db)
